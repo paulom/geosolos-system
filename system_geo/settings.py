@@ -77,7 +77,9 @@ WSGI_APPLICATION = 'system_geo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.path.join(BASE_DIR, 'db.mysql'),
+        'HOST': '/cloudsql/titanium-link-99904:geo-system-db'
+        'NAME': 'db_geo_sys'),
+        'USER' 'paulo',
     }
 }
 
